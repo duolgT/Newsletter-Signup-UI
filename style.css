@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  font-family: Arial, sans-serif;
+  background: #eef4fb;
+}
+
+.container {
+  width: min(100%, 360px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+
+.container h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container p{
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+
+.container form{
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.container label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.container input{
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container input:focus{
+  outline: 3px solid rgba(0,123,255,.25);
+  outline-offset: 2px;
+  border-color: #007BFF;
+}
+
+.container input[aria-invalid="true"] {
+  border-color: #b91c1c;
+}
+
+.container button{
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container button:hover{
+  background-color: #0056b3;
+}
+
+.container button:focus-visible {
+  outline: 3px solid rgba(0,123,255,.4);
+  outline-offset: 3px;
+}
+
+.container button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+#message {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: none;
+}
+
+#message.error {
+  display: block;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+#message.status {
+  display: block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+#message.success {
+  display: block;
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}   

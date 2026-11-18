@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Newsletter SignUp Design</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Join Our Newsletter</h1>
+    <p>Subscribe to our newsletter to receive updates and exclusive offers.</p>
+    <form id="newsletter-form">
+      <label for="email">Email address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        autocomplete="email"
+        aria-describedby="message"
+        required
+      >
+      <button type="submit" id="submit-button">
+        <span id="button-label">Subscribe</span>
+      </button>
+      <div id="message" role="status" aria-live="polite" aria-atomic="true"></div>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
